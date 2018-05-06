@@ -8,10 +8,11 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
+import serenitylabs.tutorials.trains.task.SearchFor;
 import serenitylabs.tutorials.trains.ui.ChosenTo;
 
 @RunWith(SerenityRunner.class)
-public class WhenPlanningATrip {
+public class WhenSearchingGoogle {
 
     Actor tracy;
 
@@ -30,8 +31,11 @@ public class WhenPlanningATrip {
         //Tracy goes to the website to book a ticket
 
         //GIVEN
-        tracy.has(ChosenTo.bookATicket());
+        tracy.has(ChosenTo.runAGoogleSearch());
         //Tracy views the tickets from London Paddington to Oxford
+
+        tracy.attemptsTo(SearchFor.name("Marco Tedone"));
+
         //Tracy should see that the departure and destination stations are the expected ones
     }
 

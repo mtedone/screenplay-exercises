@@ -9,7 +9,7 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class ChosenTo implements Task {
 
-    public static Performable bookATicket() {
+    public static Performable runAGoogleSearch() {
         return instrumented(ChosenTo.class);
     }
 
