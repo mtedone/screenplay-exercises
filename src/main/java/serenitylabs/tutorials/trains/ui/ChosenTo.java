@@ -3,7 +3,6 @@ package serenitylabs.tutorials.trains.ui;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import serenitylabs.tutorials.trains.model.MainMenu;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
@@ -17,7 +16,7 @@ public class ChosenTo implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(
-                Navigate.to(MainMenu.BuyTickets)
+                Navigate.toGooglePage()
         );
     }
 }
